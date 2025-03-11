@@ -1,5 +1,5 @@
 import React from "react";
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import KeyBenefits from "./pages/KeyBenefits";
 import Footer from "./components/Footer";
@@ -18,20 +18,20 @@ function App() {
   return (
     <>
       <Header />
-    
-       <Home />
-       <SuccessStories />
-       <KeyBenefits />
-     <Action />
-      <Features />
-     <Registration />
-        <Events />
-        <FAQs />
-      <AboutUs />
-       <Blog />
-     <Partners />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/success-stories" element={<SuccessStories />} />
+        <Route path="/key-benefits" element={<KeyBenefits />} />
+        <Route path="/action" element={<Action />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/faqs" element={<FAQs />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/partners" element={<Partners />} />
 
-    
+      </Routes>
       <Footer />
     </>
   );
