@@ -1,0 +1,72 @@
+/* Header Container */
+.header-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #111827; /* Tailwind: bg-gray-900 */
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Background Image */
+.header-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  filter: brightness(0.6);
+}
+
+/* Header Content */
+.header-content {
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a78bfa; /* Tailwind: hover:text-purple-400 */
+}
+
+/* Join Button */
+.join-btn {
+  background-color: #a78bfa; /* Tailwind: bg-purple-400 */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #7c3aed; /* Tailwind: hover:bg-purple-600 */
+}
